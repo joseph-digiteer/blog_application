@@ -1,5 +1,7 @@
 Rails.application.routes.draw do
-  resources :messages
+  resources :messages do
+    member do
+      post :edit
   devise_for :users
   resources :posts
   get 'my_posts', to: 'posts#my_posts'
@@ -12,4 +14,7 @@ Rails.application.routes.draw do
 
   # Defines the root path route ("/")
    root "pages#home"
+
+    end
+  end
 end
