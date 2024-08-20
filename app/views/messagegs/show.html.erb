@@ -1,0 +1,10 @@
+<p style="color: green"><%= notice %></p>
+
+<%= render @messageg %>
+
+<div>
+  <%= link_to "Edit this messageg", edit_messageg_path(@messageg) %> |
+  <%= link_to "Back to messagegs", messagegs_path %>
+
+  <%= button_to "Destroy this messageg", @messageg, method: :delete %>
+</div>

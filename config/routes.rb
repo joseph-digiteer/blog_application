@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  resources :messagegs
   devise_for :users
   resources :posts
   get 'my_posts', to: 'posts#my_posts'

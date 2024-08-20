@@ -1,0 +1,22 @@
+<%= form_with(model: messageg) do |form| %>
+  <% if messageg.errors.any? %>
+    <div style="color: red">
+      <h2><%= pluralize(messageg.errors.count, "error") %> prohibited this messageg from being saved:</h2>
+
+      <ul>
+        <% messageg.errors.each do |error| %>
+          <li><%= error.full_message %></li>
+        <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div>
+    <%= form.label :body, style: "display: block" %>
+    <%= form.text_area :body %>
+  </div>
+
+  <div>
+    <%= form.submit %>
+  </div>
+<% end %>
