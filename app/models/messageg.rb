@@ -1,2 +1,0 @@
-class Messageg < ApplicationRecord
-end
