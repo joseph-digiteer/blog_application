@@ -1,3 +1,7 @@
+<%= render TurboModalComponent.new(title: "New Post:") do %>
+  <%= render "form", post: @post %>
+<% end %>
+<!--
 <h1>New post</h1>
 
 <%= render "form", post: @post %>
@@ -7,3 +11,4 @@
 <div>
   <%= link_to "Back to posts", posts_path %>
 </div>
+-->
