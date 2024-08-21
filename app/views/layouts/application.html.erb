@@ -26,8 +26,11 @@
       <%#<%= link_to 'Log in', new_user_session_path %>
       <%#<%= link_to 'Sign up', new_user_registration_path %>
     <%#<% end %>
-    <%= Time.zone.now %>
-    <%= yield %>
+   <main class="p-8">
+      <%= link_to "Employees", employees_path %>
+      <%= Time.zone.now %>
+      <hr class="my-4">
+      <%= yield %>
     </main>
   </body>
 </html>
