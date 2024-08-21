@@ -26,7 +26,7 @@
       <%#<%= link_to 'Log in', new_user_session_path %>
       <%#<%= link_to 'Sign up', new_user_registration_path %>
     <%#<% end %>
-   <main class="p-8">
+   <main class="container mx-auto mt-28 px-5 flex">
       <%= turbo_frame_tag "modal" %>
       <%= link_to "Employees", employees_path %>
       <%= Time.zone.now %>
